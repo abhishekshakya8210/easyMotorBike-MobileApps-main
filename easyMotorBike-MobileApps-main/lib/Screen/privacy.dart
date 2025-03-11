@@ -10,8 +10,8 @@ class Privacy extends StatefulWidget {
 class _PrivacyState extends State<Privacy> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('Privacy Policy Page'),),
+    return const Scaffold(
+      body:  Center(child: Text('Privacy Policy Page'),),
     );
   }
 }
