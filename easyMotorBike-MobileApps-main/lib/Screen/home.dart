@@ -1,6 +1,9 @@
+import 'package:easymotorbike/Screen/allbooking.dart';
+import 'package:easymotorbike/Screen/allvehicles.dart';
 import 'package:easymotorbike/Screen/drawer/drawer.dart';
 import 'package:easymotorbike/Screen/homewidget.dart/newbooking.dart';
 import 'package:easymotorbike/Screen/homewidget.dart/topcard.dart';
+import 'package:easymotorbike/Screen/salesreport.dart';
 import 'package:easymotorbike/generat/images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -112,7 +115,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         width: MediaQuery.of(context).size.width * 0.48,
                         height: MediaQuery.of(context).size.height * 0.20,
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(AllBookingsPage());
+                          },
                           child: Card(
                             color: Colors.green,
                             elevation: 4,
@@ -157,7 +162,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         width: MediaQuery.of(context).size.width * 0.48,
                         height: MediaQuery.of(context).size.height * 0.20,
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(AllVehicles());
+                          },
                           child: Card(
                             color: Colors.green,
                             elevation: 4,
@@ -196,7 +203,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         width: MediaQuery.of(context).size.width * 0.48,
                         height: MediaQuery.of(context).size.height * 0.20,
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(SalesReportPage());
+                          },
                           child: Card(
                             color: Colors.green,
                             elevation: 4,

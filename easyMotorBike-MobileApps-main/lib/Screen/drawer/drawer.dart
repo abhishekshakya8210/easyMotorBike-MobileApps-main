@@ -1,4 +1,8 @@
 import 'dart:io';
+import 'package:easymotorbike/Screen/changepassword.dart';
+import 'package:easymotorbike/Screen/faq.dart';
+import 'package:easymotorbike/Screen/privacy.dart';
+import 'package:easymotorbike/Screen/setting.dart';
 import 'package:easymotorbike/generat/images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -55,16 +59,16 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   Get.back();
                 }),
                 _buildDrawerItem(Icons.lock, 'Change Password', () {
-                  Get.back();
+                  Get.to(const ChangePassword());
                 }),
                 _buildDrawerItem(Icons.settings, 'Settings', () {
-                  Get.back();
+                  Get.to( SettingsPage());
                 }),
                 _buildDrawerItem(Icons.help_outline, 'FAQ', () {
-                  Get.back();
+                  Get.to(const Faq());
                 }),
                 _buildDrawerItem(Icons.privacy_tip, 'Privacy Policy', () {
-                  Get.back();
+                  Get.to(const Privacy());
                 }),
               ],
             ),
